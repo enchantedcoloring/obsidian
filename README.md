@@ -1,4 +1,5 @@
-# Enchanted is a color scheme for note-taking.
+# Enchanted for Obsidian
+It's a color scheme for note-taking.
 
 <img src="encantado obsidian title.jpg">
 

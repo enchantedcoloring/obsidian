@@ -206,6 +206,12 @@ Dark Theme
   --metadata-label-text-color-hover: hsl(from var(--color-green) h s 20%);
   /*--metadata-label-text-color-hover: color-mix(in oklab, teal 20%, olive 30%, blue 50%);*/
 
+  &.mod-macos {
+    --input-shadow: none;
+    --background-modifier-border: var(--color-base-00);
+  }
+
+
   /*******************************************************
   UI styles (Dark)
   ********************************************************/
@@ -366,6 +372,14 @@ Light Theme
   --metadata-label-text-color: var(--color-green);
   --metadata-label-text-color-hover: hsl(from var(--color-green) h s 20%);
   /*--metadata-label-text-color-hover: color-mix(in oklab, teal 20%, olive 30%, blue 50%);*/
+
+
+  &.mod-macos {
+    --input-shadow: none;
+    --background-modifier-border: var(--color-base-00);
+  }
+
+
 
   /*******************************************************
   UI styles (Light)

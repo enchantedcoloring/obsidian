@@ -151,6 +151,20 @@ Dark Theme
 
   --inline-title-color: var(--color-pink); /* Page title */
 
+  --callout-default: var(--color-blue);
+  --callout-error: var(--color-red);
+  --callout-example: var(--color-purple);
+  --callout-fail: var(--color-red);
+  --callout-important: var(--color-cyan);
+  --callout-info: var(--color-blue);
+  --callout-question: var(--color-orange);
+  --callout-success: var(--color-green);
+  --callout-summary: var(--color-cyan);
+  --callout-tip: var(--color-cyan);
+  --callout-todo: var(--color-blue);
+  --callout-warning: var(--color-orange);
+  --callout-quote: var(--color-base-60);
+
   --checkbox-radius: var(--radius-l);
   --checkbox-color: var(--color-green);
   --checkbox-color-hover: hsl(from var(--color-green) h 100 66);
@@ -320,6 +334,20 @@ Light Theme
   --background-modifier-hover: #fff;
 
   --inline-title-color: var(--color-pink); /* Page title */
+
+  --callout-default: var(--color-blue);
+  --callout-error: var(--color-red);
+  --callout-example: var(--color-purple);
+  --callout-fail: var(--color-red);
+  --callout-important: var(--color-cyan);
+  --callout-info: var(--color-blue);
+  --callout-question: var(--color-orange);
+  --callout-success: var(--color-green);
+  --callout-summary: var(--color-cyan);
+  --callout-tip: var(--color-cyan);
+  --callout-todo: var(--color-blue);
+  --callout-warning: var(--color-orange);
+  --callout-quote: var(--color-base-25);
 
   --checkbox-radius: var(--radius-l);
   --checkbox-color: var(--color-green);

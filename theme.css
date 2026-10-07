@@ -386,7 +386,7 @@ Light Theme
   --table-border-color: var(--color-base-10);
   --table-header-color: var(--color-base-60);
 
-  --text-highlight-bg: var(--color-yellow);
+  --text-highlight-bg: hsl(from var(--color-yellow) h s l / 0.6);
   --text-normal: var(--color-base-40);
   /*--text-muted: hsl(from var(--color-base-40) h 0 l / .6);*/
   --text-selection: hsl(from var(--color-cyan) h s l / 0.2);

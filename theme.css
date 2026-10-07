@@ -242,7 +242,7 @@ Dark Theme
   --titlebar-background: var(--surface-dark-secondary);
   --titlebar-background-focused: var(--surface-dark-secondary);
 
-  --setting-items-background: transparent;
+  /* --setting-items-background: transparent; */
   .setting-item {--background-modifier-border: var(--color-base-20);}
 
   /*.workspace-drawer-tab-options-list { border: 1px red solid;}
@@ -425,7 +425,7 @@ Light Theme
   --titlebar-background: var(--surface-light-primary);
   --titlebar-background-focused: var(--surface-light-secondary);
 
-  --setting-items-background: transparent;
+  --setting-items-background: white;
   .setting-item {--background-modifier-border: var(--color-base-30);}
 
   /*.workspace-drawer-tab-options-list { border: 1px red solid;}*/

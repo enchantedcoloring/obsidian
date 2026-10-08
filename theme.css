@@ -198,6 +198,7 @@ Dark Theme
   --nav-item-color-hover: #E4E5E8;
   /*--nav-indentation-guide-color: var(--color-green);*/
 
+  --table-add-button-border-color: var(--color-base-10);
   --table-border-color: var(--color-base-20);
   --table-header-color: var(--color-base-70);
 
@@ -383,6 +384,7 @@ Light Theme
   --nav-item-color-hover: #191915;
   /*--nav-indentation-guide-color: var(--color-green);*/
 
+  --table-add-button-border-color: var(--color-base-10);
   --table-border-color: var(--color-base-10);
   --table-header-color: var(--color-base-60);
 

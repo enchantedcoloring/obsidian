@@ -114,8 +114,6 @@ Dark Theme
     );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
   --text-accent: var(--color-accent-1);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
@@ -123,14 +121,6 @@ Dark Theme
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --raised-mask-background: transparent;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.045), 0 4px 24px rgba(0, 0, 0, 0.195),
     var(--shadow-edges);
@@ -183,6 +173,9 @@ Dark Theme
   --hr-color: hsl(from var(--enchanted-bone) h s l / 0.08);
   --hr-thickness: 6px;
 
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-30);
+
   --modal-border-color: var(--color-base-20, var(--background-modifier-border-focus));
 
   /* There's some bug with it not taking the variable on mobile */
@@ -221,12 +214,6 @@ Dark Theme
   --metadata-label-text-color-hover: hsl(from var(--color-green) h s 20%);
   /*--metadata-label-text-color-hover: color-mix(in oklab, teal 20%, olive 30%, blue 50%);*/
 
-  &.mod-macos {
-    --input-shadow: none;
-    --background-modifier-border: var(--color-base-00);
-  }
-
-
   /*******************************************************
   UI styles (Dark)
   ********************************************************/
@@ -250,6 +237,7 @@ Dark Theme
   .suggestion-container {border: 1px green solid;}*/
   --suggestion-background: var(--color-base-25);
 }
+
 
 /*******************************************************
 Light Theme
@@ -307,14 +295,6 @@ Light Theme
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
   --shadow-edges: 0 0 transparent;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -328,6 +308,7 @@ Light Theme
 
   --background-primary: var(--surface-light-primary);
   --background-secondary: var(--surface-light-secondary);
+  --background-primary-alt: var(--color-base-05);
 
   /* This is the color for dropdowns and navs on mobile */
   --background-modifier-border: var(--color-base-20);
@@ -366,9 +347,13 @@ Light Theme
   --hr-color: hsl(from var(--color-base-70) h s l / 0.08);
   --hr-thickness: 6px;
 
+  --interactive-normal: var(--color-base-05);
+  --interactive-hover: var(--color-base-05); /* This matches default behavoir in settings */
+
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
 
+  --mobile-sidebar-background: rgb(var(--mono-rgb-0));
   --modal-border-color: var(--color-base-10, var(--background-modifier-border-focus));
 
   /* There's some bug with it not taking the variable on mobile */
@@ -403,14 +388,6 @@ Light Theme
   --metadata-label-text-color-hover: hsl(from var(--color-green) h s 20%);
   /*--metadata-label-text-color-hover: color-mix(in oklab, teal 20%, olive 30%, blue 50%);*/
 
-
-  &.mod-macos {
-    --input-shadow: none;
-    --background-modifier-border: var(--color-base-00);
-  }
-
-
-
   /*******************************************************
   UI styles (Light)
   ********************************************************/
@@ -427,7 +404,7 @@ Light Theme
   --titlebar-background: var(--surface-light-primary);
   --titlebar-background-focused: var(--surface-light-secondary);
 
-  --setting-items-background: white;
+  --setting-items-background: rgb(var(--mono-rgb-0));
   .setting-item {--background-modifier-border: var(--color-base-30);}
 
   /*.workspace-drawer-tab-options-list { border: 1px red solid;}*/
